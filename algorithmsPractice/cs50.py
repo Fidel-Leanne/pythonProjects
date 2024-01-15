@@ -1,7 +1,6 @@
+import cowsay
+
 import sys
 
-if len(sys.argv)<2:
-    sys.exit("too few arguments")
-
-for arg in sys.argv[1:]:
-    print(f'hello my name is {arg}')
+if (len(sys.argv)==2):
+    cowsay.trex('hello. '+ sys.argv[1])
