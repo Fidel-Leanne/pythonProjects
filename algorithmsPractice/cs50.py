@@ -1,9 +1,7 @@
-while True:
-    try: 
-        x= int(input('enter int'))
-    except ValueError:
-        pass
-    else:
-        break
+import sys
 
-print(f'x is {x}')
+if len(sys.argv)<2:
+    sys.exit("too few arguments")
+
+for arg in sys.argv[1:]:
+    print(f'hello my name is {arg}')
