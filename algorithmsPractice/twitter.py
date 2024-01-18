@@ -1,6 +1,8 @@
+import re
+
 url= input('URL').strip()
 
-username= url.replace('https://twitter.com/', '')
+if matches:= re.search(r'^https?://?(www\.)?twitter.com/', url, re.IGNORECASE):
 
-print(f'Username: {username}')
+    print(f'Username: ' , matches.group(1))
 
